@@ -1,5 +1,5 @@
-@use '../global/mixin' as *;
-@use '../global/variables' as *;
+@use "../global/mixin" as *;
+@use "../global/variables" as *;
 .btn-rectangular {
   width: 240px;
   height: 72px;
@@ -22,30 +22,30 @@
     @include button-animation;
   }
   &__go {
-    background-image: url(/public/images/go.svg);
+    background-image: url(/images/go.svg);
   }
   &--lenovo {
-    background-image: url(/public/images/logo_bitmap/Bitmap.svg);
+    background-image: url(/images/logo_bitmap/Bitmap.svg);
   }
   &--samsung {
-    background-image: url(/public/images/logo_bitmap/Bitmap1.svg);
+    background-image: url(/images/logo_bitmap/Bitmap1.svg);
   }
   &--apple {
-    background-image: url(/public/images/logo_bitmap/Bitmap2.svg);
+    background-image: url(/images/logo_bitmap/Bitmap2.svg);
   }
   &--viewsonic {
-    background-image: url(/public/images/logo_bitmap/Bitmap3.svg);
+    background-image: url(/images/logo_bitmap/Bitmap3.svg);
   }
   &--bosch {
-    background-image: url(/public/images/logo_bitmap/Bitmap4.svg);
+    background-image: url(/images/logo_bitmap/Bitmap4.svg);
   }
   &--hp {
-    background-image: url(/public/images/logo_bitmap/Bitmap5.svg);
+    background-image: url(/images/logo_bitmap/Bitmap5.svg);
   }
   &--acer {
-    background-image: url(/public/images/logo_bitmap/Bitmap6.svg);
+    background-image: url(/images/logo_bitmap/Bitmap6.svg);
   }
   &--sony {
-    background-image: url(/public/images/logo_bitmap/Bitmap7.svg);
+    background-image: url(/images/logo_bitmap/Bitmap7.svg);
   }
 }

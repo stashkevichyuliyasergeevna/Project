@@ -1,5 +1,5 @@
-@use '../global/mixin' as *;
-@use '../global/variables' as *;
+@use "../global/mixin" as *;
+@use "../global/variables" as *;
 .title {
   border-top: 1px solid $color-sky;
   height: 56px;

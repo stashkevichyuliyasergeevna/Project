@@ -1,5 +1,5 @@
-@use '../global/variables' as *;
-@use '../global/mixin' as *;
+@use "../global/variables" as *;
+@use "../global/mixin" as *;
 .burger-menu {
   // overflow-y: scroll;
   z-index: $z-index-menu;

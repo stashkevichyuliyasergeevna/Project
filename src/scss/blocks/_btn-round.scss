@@ -1,5 +1,5 @@
-@use '../global/mixin' as *;
-@use '../global/variables' as *;
+@use "../global/mixin" as *;
+@use "../global/variables" as *;
 .btn-round {
   width: 40px;
   height: 40px;
@@ -18,30 +18,30 @@
   }
 
   &--burger-button {
-    background-image: url('/public/images/burger.svg');
+    background-image: url("/images/burger.svg");
   }
   &--call-button {
-    background-image: url('/public/images/call.svg');
+    background-image: url("/images/call.svg");
   }
   &--chat-button {
-    background-image: url('/public/images/chat.svg');
+    background-image: url("/images/chat.svg");
   }
   &--profile-button {
-    background-image: url('/public/images/profile.svg');
+    background-image: url("/images/profile.svg");
   }
   &--repair-button {
-    background-image: url('/public/images/repair.svg');
+    background-image: url("/images/repair.svg");
   }
   &--checkstatus-button {
-    background-image: url('/public/images/checkstatus.svg');
+    background-image: url("/images/checkstatus.svg");
   }
   &--burger-close-button {
-    background-image: url('/public/images/burger_close.svg');
+    background-image: url("/images/burger_close.svg");
   }
   &--search-button {
-    background-image: url('/public/images/search.svg');
+    background-image: url("/images/search.svg");
   }
   &--go {
-    background-image: url(/public/images/go.svg);
+    background-image: url("/images/go.svg");
   }
 }

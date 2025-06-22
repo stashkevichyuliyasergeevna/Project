@@ -1,22 +1,22 @@
-@use '../global/variables' as *;
+@use "../global/variables" as *;
 
 @font-face {
   font-family: $ff-regular;
-  src: url('/public/fonts/TTLakes-Regular.ttf') format('truetype');
+  src: url("/fonts/TTLakes-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: $ff-medium;
-  src: url('/public/fonts/TTLakes-Medium.ttf') format('truetype');
+  src: url("/fonts/TTLakes-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: $ff-bold;
-  src: url('/public/fonts/TTLakes-Bold.ttf') format('truetype');
+  src: url("/fonts/TTLakes-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }

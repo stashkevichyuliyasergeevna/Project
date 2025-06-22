@@ -1,9 +1,9 @@
-@use '../global/mixin' as *;
-@use '../global/variables' as *;
+@use "../global/mixin" as *;
+@use "../global/variables" as *;
 .after-effect-container {
   position: relative;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;

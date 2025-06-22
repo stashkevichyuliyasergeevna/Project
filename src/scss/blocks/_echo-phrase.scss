@@ -1,5 +1,5 @@
-@use '../global/mixin' as *;
-@use '../global/variables' as *;
+@use "../global/mixin" as *;
+@use "../global/variables" as *;
 .echo-phrase {
   font-family: $ff-regular;
   font-weight: 400;

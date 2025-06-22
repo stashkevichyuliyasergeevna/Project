@@ -1,5 +1,5 @@
-@use '../global/mixin' as *;
-@use '../global/variables' as *;
+@use "../global/mixin" as *;
+@use "../global/variables" as *;
 .btn-oval {
   width: 119px;
   height: 32px;
@@ -19,9 +19,9 @@
     @include button-animation;
   }
   &--order {
-    background-image: url(/public/images/order.svg);
+    background-image: url(/images/order.svg);
   }
   &--send {
-    background-image: url(/public/images/send.svg);
+    background-image: url(/images/send.svg);
   }
 }

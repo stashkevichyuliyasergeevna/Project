@@ -1,5 +1,5 @@
-@use '../global/variables' as *;
-@use '../global/mixin' as *;
+@use "../global/variables" as *;
+@use "../global/mixin" as *;
 .btn-inscription {
   display: flex;
   flex-wrap: nowrap;
@@ -21,12 +21,12 @@
 
   &--repair {
     img {
-      background-image: url(/public/images/repair.svg);
+      background-image: url(/images/repair.svg);
     }
   }
   &--checkstatus {
     img {
-      background-image: url(/public/images/checkstatus.svg);
+      background-image: url(/images/checkstatus.svg);
     }
   }
 }
