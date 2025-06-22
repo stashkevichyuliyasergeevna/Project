@@ -1,0 +1,34 @@
+//global
+@use 'global/variables' as *;
+@use './global/normalize';
+@use './global/reset';
+@use './global/mixin';
+@use './global/fonts';
+//for js
+@use './global/visually-hidden';
+@use './global/rotated';
+//blocks
+@use './blocks/after-effect-container';
+@use './blocks/article';
+@use './blocks/blur-overlay';
+@use './blocks/body';
+@use './blocks/btn-inscription';
+@use './blocks/btn-oval';
+@use './blocks/btn-read-more';
+@use './blocks/btn-rectangular';
+@use './blocks/btn-round';
+@use './blocks/btn-square';
+@use './blocks/burger-menu';
+@use './blocks/buttons-menu';
+@use './blocks/echo-phrase';
+@use './blocks/communication-menu';
+@use './blocks/footer';
+@use './blocks/header';
+@use './blocks/logo';
+@use './blocks/main';
+@use './blocks/navigation-bar';
+@use './blocks/navigation-swiper';
+@use './blocks/service-cards';
+@use './blocks/service-table';
+@use './blocks/title';
+@use './blocks/swiper';

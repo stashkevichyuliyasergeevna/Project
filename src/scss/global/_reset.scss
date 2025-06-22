@@ -1,0 +1,110 @@
+@use './mixin' as *;
+@use './variables' as *;
+/* Reset CSS */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $ff-regular, Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Сброс стилей */
+
+/* Сброс стандартных значений для ссылок */
+a {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  color: inherit; /* Наследуем цвет текста */
+  cursor: pointer; /* Показываем, что это кликабельный элемент */
+}
+
+/* Сброс стилей для элементов заголовка */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; /* Убираем внешние отступы */
+  font-size: inherit; /* Наследуем размер шрифта */
+  font-weight: inherit; /* Наследуем насыщенность шрифта */
+}
+
+/* Сброс стилей для абзацев */
+p {
+  margin: 0; /* Убираем внешние отступы */
+  padding: 0; /* Убираем внутренние отступы */
+}
+
+/* Дополнительные сбросы (по желанию) */
+
+/* Убираем стандартное оформление списка */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Убираем внутренние отступы у всех элементов */
+* {
+  padding: 0;
+  box-sizing: border-box; /* Учитываем padding и border в общей ширине элемента */
+}
+
+h1 {
+  font-family: $ff-bold, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 143%;
+  letter-spacing: -0.02em;
+  color: #1b1c21;
+}
+
+h2 {
+  font-family: $ff-regular, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #7e7e82;
+}
+
+h3 {
+  font-family: $ff-medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #1b1c21;
+}
+
+p,
+dl,
+dt,
+dd {
+  font-family: $ff-regular;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+  color: #1b1c21;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+button p {
+  font-size: 16px;
+  font-family: $ff-medium;
+}

@@ -1,0 +1,29 @@
+@use '../global/mixin' as *;
+@use '../global/variables' as *;
+.btn-square {
+  width: 240px;
+  height: 160px;
+  padding: 16px;
+  border-radius: $standart-radius;
+  text-decoration: none;
+  border: 1px solid $grey;
+  cursor: pointer;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include button-animation;
+  }
+  &__text {
+    display: flex;
+    justify-content: start;
+  }
+  &__img-wrapper {
+    display: flex;
+    justify-content: end;
+  }
+}

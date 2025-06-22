@@ -1,0 +1,49 @@
+@use '../global/variables' as *;
+@use '../global/mixin' as *;
+.service-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  // overflow-x: scroll;
+  @media (min-width: 768px) {
+    display: none;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    position: relative;
+    width: 260px;
+    height: 200px;
+    padding: 16px;
+    border-radius: $standart-radius;
+    text-decoration: none;
+    border: 1px solid $grey;
+    cursor: pointer;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover,
+    &:focus,
+    &:active {
+      @include button-animation;
+    }
+  }
+  &__dt-dd-wrapper {
+    gap: 4px;
+  }
+  &__dt-text {
+    color: $grey;
+  }
+  &__dd-text {
+    margin: 0;
+    color: $color-text;
+  }
+  &__btn {
+    position: absolute;
+    top: 77%;
+    left: 50%;
+  }
+}

@@ -1,0 +1,43 @@
+@use '../global/variables' as *;
+@use '../global/mixin' as *;
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 48px;
+  }
+  @media (min-width: 1440px) {
+    gap: 36px;
+    padding-left: 34px;
+    padding-right: 29px;
+  }
+
+  &__content {
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      padding: 0px;
+    }
+  }
+
+  &__btn-read-more {
+    margin-top: 16px;
+    @media (min-width: 768px) {
+      margin-top: 14px;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    @media (min-width: 768px) {
+      border-radius: $standart-radius;
+    }
+  }
+}

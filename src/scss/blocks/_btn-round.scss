@@ -1,0 +1,47 @@
+@use '../global/mixin' as *;
+@use '../global/variables' as *;
+.btn-round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include button-animation;
+  }
+
+  &--burger-button {
+    background-image: url('/public/images/burger.svg');
+  }
+  &--call-button {
+    background-image: url('/public/images/call.svg');
+  }
+  &--chat-button {
+    background-image: url('/public/images/chat.svg');
+  }
+  &--profile-button {
+    background-image: url('/public/images/profile.svg');
+  }
+  &--repair-button {
+    background-image: url('/public/images/repair.svg');
+  }
+  &--checkstatus-button {
+    background-image: url('/public/images/checkstatus.svg');
+  }
+  &--burger-close-button {
+    background-image: url('/public/images/burger_close.svg');
+  }
+  &--search-button {
+    background-image: url('/public/images/search.svg');
+  }
+  &--go {
+    background-image: url(/public/images/go.svg);
+  }
+}

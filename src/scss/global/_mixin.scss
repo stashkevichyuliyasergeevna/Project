@@ -1,0 +1,19 @@
+@use '../global/variables' as *;
+
+@mixin button-animation {
+  transform: scale(1.01);
+  filter: contrast(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease;
+}
+@mixin contrast-text-animation {
+  transform: scale(1.01);
+  filter: contrast(1.2);
+  transition: transform 0.3s ease;
+  color: $grey;
+  border-left: 5px solid $color-secondary;
+}
+@mixin grey-text-animation {
+  color: $grey;
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,37 @@
+@use '../global/variables' as *;
+
+.body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  //width: auto;
+  min-width: 320px;
+  max-width: 1440px;
+  height: 100%;
+  overflow: auto;
+  background-color: $color-background;
+  font-family: $ff-regular, Arial, sans-serif;
+  font-size: 16px;
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  &__main-thread {
+    max-width: 1440px;
+    @media (min-width: 1440px) {
+      max-width: 1120px;
+    }
+  }
+  &__header {
+    margin-top: 24px;
+    @media (min-width: 1440px) {
+      margin-top: 42px;
+    }
+  }
+  &__footer {
+    margin-top: 40px;
+    @media (min-width: 768px) {
+      margin-top: 50px;
+    }
+  }
+}

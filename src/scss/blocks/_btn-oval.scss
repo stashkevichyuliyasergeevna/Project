@@ -1,0 +1,27 @@
+@use '../global/mixin' as *;
+@use '../global/variables' as *;
+.btn-oval {
+  width: 119px;
+  height: 32px;
+  text-decoration: none;
+  background-color: inherit;
+  border: 1px solid transparent;
+  border-radius: 20px;
+
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include button-animation;
+  }
+  &--order {
+    background-image: url(/public/images/order.svg);
+  }
+  &--send {
+    background-image: url(/public/images/send.svg);
+  }
+}

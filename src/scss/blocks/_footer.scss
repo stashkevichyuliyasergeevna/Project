@@ -1,0 +1,35 @@
+@use '../global/variables' as *;
+@use '../global/mixin' as *;
+.footer {
+  border-top: 1px solid $color-sky;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 32px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: start;
+    justify-content: space-between;
+  }
+  p {
+    color: $grey;
+  }
+  &__left-wrapper {
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  &__middle-wrapper {
+  }
+  &__right-wrapper {
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: right;
+      width: 213px;
+    }
+  }
+}

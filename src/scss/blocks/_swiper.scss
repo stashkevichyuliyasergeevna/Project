@@ -1,0 +1,12 @@
+.swiper {
+  overflow: hidden;
+  &-slide {
+    width: auto;
+    height: auto;
+  }
+  &-pagination {
+    position: static;
+    padding-top: 16px;
+    margin: 0 auto;
+  }
+}

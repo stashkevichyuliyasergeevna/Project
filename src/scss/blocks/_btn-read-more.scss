@@ -1,0 +1,27 @@
+@use '../global/mixin' as *;
+@use '../global/variables' as *;
+.btn-read-more {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font-family: $ff-medium;
+  gap: 8px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include grey-text-animation;
+  }
+  &--disappearing {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

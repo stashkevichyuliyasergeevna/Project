@@ -1,0 +1,8 @@
+@use '../global/mixin' as *;
+@use '../global/variables' as *;
+.title {
+  border-top: 1px solid $color-sky;
+  height: 56px;
+  padding: 16px 32px;
+  background: linear-gradient(to right, $color-background, $white);
+}

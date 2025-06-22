@@ -1,0 +1,43 @@
+@use '../global/mixin' as *;
+@use '../global/variables' as *;
+
+.service-table {
+  display: none;
+  border-spacing: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid inherit;
+  border-radius: $standart-radius;
+
+  @media (min-width: 768px) {
+    display: table;
+  }
+  @media (min-width: 1440px) {
+    display: table;
+  }
+  &__thead {
+    text-align: left;
+    background-color: $color-background;
+    color: $grey;
+  }
+  &__tr {
+    height: 64px;
+    td:last-child {
+      text-align: right;
+    }
+  }
+  &__indent {
+    padding: 16px;
+    @media (min-width: 1440px) {
+      padding: 16px 24px;
+    }
+  }
+  &__separator {
+    text-align: center;
+    line-height: 0px;
+    img {
+      width: 95%;
+      height: 2px;
+    }
+  }
+}

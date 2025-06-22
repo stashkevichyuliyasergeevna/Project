@@ -1,0 +1,19 @@
+@use '../global/mixin' as *;
+@use '../global/variables' as *;
+.after-effect-container {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(to left, $color-background, transparent);
+    pointer-events: none;
+    z-index: $z-index-effect;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}
