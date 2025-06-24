@@ -1,10 +1,8 @@
-// Инициализирую свайпер
-
 export function initSwiper(containerSelector) {
   const newSwiper = new Swiper(containerSelector, {
     loop: true,
     slidesPerView: "auto",
-    spaceBetween: 16,
+    spaceBetween: 0,
     slideToClickedSlides: true,
     pagination: {
       el: containerSelector.querySelector(".swiper-pagination"),
@@ -17,12 +15,6 @@ export function initSwiper(containerSelector) {
       pageUpDown: true,
     },
     slideOverflow: true,
-    breakpoints: {
-      375: { spaceBetween: 0 },
-      425: { spaceBetween: 0 },
-      500: { spaceBetween: 24 },
-      700: { spaceBetween: 24 },
-    },
     allowTouchMove: true,
   });
 

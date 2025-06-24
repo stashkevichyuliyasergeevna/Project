@@ -1,5 +1,5 @@
 .rotated {
-  display: inline-block; /* или block, если нужно */
+  display: inline-block; 
   transform: rotate(180deg);
-  transition: transform 0.3s ease; /* для плавности */
+  transition: transform 0.3s ease; 
 }
