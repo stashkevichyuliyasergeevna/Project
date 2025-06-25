@@ -70,7 +70,7 @@
       }
     }
   }
-  &__nav {
+  &__ul {
     margin-top: 16px;
     display: flex;
     flex-direction: column;
@@ -79,15 +79,14 @@
       margin-top: 32px;
       gap: 32px;
     }
-
-    li {
-      padding-left: 16px;
-      &:hover,
-      &:focus,
-      &:active,
-      &.active {
-        @include contrast-text-animation;
-      }
+  }
+  &__li {
+    padding-left: 16px;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      @include contrast-text-animation;
     }
   }
 
@@ -106,39 +105,29 @@
     gap: 16px;
   }
 
-  &__mail {
+  &__address {
     margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    gap: 16px;
+  }
+
+  &__mail {
     font-family: $ff-regular;
     font-size: 16px;
   }
 
   &__phone {
-    margin-top: 12px;
     font-family: $ff-bold;
     font-size: 24px;
   }
 
   &__language {
-    font-size: 16px;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    gap: 7px;
     margin-bottom: 32px;
     margin-top: 8px;
-
     @media (min-width: 768px) {
       margin-top: 40px;
-    }
-
-    button {
-      all: unset;
-      cursor: pointer;
-      &:hover,
-      &:focus,
-      &:active {
-        @include grey-text-animation;
-      }
     }
   }
 }

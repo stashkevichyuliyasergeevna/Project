@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
     buttonsMenus: document.querySelectorAll(".buttons-menu"),
     // Все пагинаторы
     paginationContainres: document.querySelectorAll(".swiper-pagination"),
+    // Тело
+    body: document.querySelector(".body"),
   };
   const swipers = {
     first: null,
@@ -127,12 +129,12 @@ document.addEventListener("DOMContentLoaded", () => {
     buttonsAndPRegulator(
       "first",
       elements.buttonsMenuFirst,
-      visiblesButtonsInFirstMenu,
+      visiblesButtonsInFirstMenu
     );
     buttonsAndPRegulator(
       "second",
       elements.buttonsMenuSecond,
-      visiblesButtonsInSecondMenu,
+      visiblesButtonsInSecondMenu
     );
     buttonsAndPRegulator("readme", elements.readMoreMenu, visiblesP);
   }
@@ -177,11 +179,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function hideElement(element) {
     element.classList.add("visually-hidden");
     elements.blurOverlay.classList.add("visually-hidden");
+    elements.body.style.overflow = "auto";
   }
 
   function showElement(element) {
     element.classList.remove("visually-hidden");
     elements.blurOverlay.classList.remove("visually-hidden");
+    elements.body.style.overflow = "hidden";
   }
 
   counterButtonsAndP();
@@ -223,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.buttonsMenuFirst,
         elements.showAllButtonFirstImg,
         elements.showAllButtonFirstText,
-        "btns",
+        "btns"
       );
     } else if (event.target.closest("#showAllButtonSecond")) {
       showHide(
@@ -231,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.buttonsMenuSecond,
         elements.showAllButtonSecondImg,
         elements.showAllButtonSecondText,
-        "btns",
+        "btns"
       );
     } else if (event.target.closest("#readMoreButton")) {
       showHide(
@@ -239,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.readMoreMenu,
         elements.readMoreButtonImg,
         elements.readMoreButtonText,
-        "read",
+        "read"
       );
     }
   });

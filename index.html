@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body class="body">
-    <aside class="burger-menu visually-hidden" id="burgerMenu">
+    <section class="burger-menu visually-hidden" id="burgerMenu">
       <div class="burger-menu__wrapper" id="burgerMenuWrapper">
         <div class="burger-menu__main-content">
           <header class="burger-menu__header">
@@ -41,35 +41,35 @@
               aria-label="Открыть меню"
             ></button>
           </header>
-          <ul class="burger-menu__nav">
-            <li class="active">
+          <ul class="burger-menu__ul">
+            <li class="active burger-menu__li">
               <a href="#">Ремонт техники</a>
             </li>
-            <li>
+            <li class="burger-menu__li">
               <a href="#">Услуги и сервисы</a>
             </li>
-            <li>
+            <li class="burger-menu__li">
               <a href="#">Корпоративным клиентам</a>
             </li>
-            <li>
+            <li class="burger-menu__li">
               <a href="#">Продавцам техники</a>
             </li>
-            <li>
+            <li class="burger-menu__li">
               <a href="#">Партнерам</a>
             </li>
-            <li>
+            <li class="burger-menu__li">
               <a href="#">Производителям</a>
             </li>
-            <li>
+            <li class="burger-menu__li">
               <a href="#">Наши сервисные центры</a>
             </li>
-            <li>
+            <li class="burger-menu__li">
               <a href="#">Контакты</a>
             </li>
           </ul>
         </div>
         <footer class="burger-menu__footer">
-          <nav class="burger-menu__buttons">
+          <div class="burger-menu__buttons">
             <button
               class="btn-round btn-round--call-button"
               aria-label="Позвонить компании"
@@ -84,21 +84,44 @@
               class="btn-round btn-round--profile-button"
               aria-label="Войти в свой кабинет"
             ></button>
-          </nav>
-          <p class="burger-menu__mail">
-            <a href="mailto:mail@cps.com">mail@cps.com</a>
-          </p>
-          <p class="burger-menu__phone">
-            <a href="tel:88008908900">8 800 890 8900</a>
-          </p>
-          <div class="burger-menu__language">
-            <button aria-label="Выбрать русский язык">RU</button>
-            <button aria-label="Выбрать английский язык">EN</button>
-            <button aria-label="Выбрать китайский язык">CH</button>
           </div>
+          <address class="burger-menu__address">
+            <a href="mailto:mail@cps.com" class="burger-menu__mail"
+              >mail@cps.com</a
+            >
+            <a href="tel:88008908900" class="burger-menu__phone"
+              >8 800 890 8900</a
+            >
+          </address>
+          <ul class="burger-menu__language language">
+            <li>
+              <button
+                class="language__button"
+                aria-label="Выбрать русский язык"
+              >
+                RU
+              </button>
+            </li>
+            <li>
+              <button
+                class="language__button"
+                aria-label="Выбрать английский язык"
+              >
+                EN
+              </button>
+            </li>
+            <li>
+              <button
+                class="language__button"
+                aria-label="Выбрать китайский язык"
+              >
+                CH
+              </button>
+            </li>
+          </ul>
         </footer>
       </div>
-    </aside>
+    </section>
 
     <aside class="navigation-bar">
       <div class="navigation-bar__left-wrapper">
@@ -238,8 +261,8 @@
             </p>
             <p>
               Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-              очередь, советуют нас родным и близким.</p
-            >
+              очередь, советуют нас родным и близким.
+            </p>
             <p>
               <br />
               Мы используем только оригинальные запчасти и современное
@@ -533,9 +556,9 @@
               <dl class="service-cards__card">
                 <div class="service-cards__dt-dd-wrapper">
                   <dt class="service-cards__dt-text">Ремонтные услуги</dt>
-                  <dd class="service-cards__dd-text"
-                    >Тестирование с выдачей технического заключения</dd
-                  >
+                  <dd class="service-cards__dd-text">
+                    Тестирование с выдачей технического заключения
+                  </dd>
                 </div>
                 <div class="service-cards__dt-dd-wrapper">
                   <dt class="service-cards__dt-text">Цена</dt>
@@ -543,7 +566,7 @@
                 </div>
                 <div class="service-cards__dt-dd-wrapper">
                   <dt class="service-cards__dt-text">Срок</dt>
-                  <dd class="service-cards__dd-text">30-120 мин </dd>
+                  <dd class="service-cards__dd-text">30-120 мин</dd>
                 </div>
                 <button
                   class="btn-oval btn-oval--order service-cards__btn"
@@ -563,7 +586,7 @@
                 </div>
                 <div class="service-cards__dt-dd-wrapper">
                   <dt class="service-cards__dt-text">Срок</dt>
-                  <dd class="service-cards__dd-text">30 мин </dd>
+                  <dd class="service-cards__dd-text">30 мин</dd>
                 </div>
                 <button
                   class="btn-oval btn-oval--order service-cards__btn"
@@ -595,9 +618,9 @@
               <dl class="service-cards__card">
                 <div class="service-cards__dt-dd-wrapper">
                   <dt class="service-cards__dt-text">Ремонтные услуги</dt>
-                  <dd class="service-cards__dd-text"
-                    >Замена полифонического динамика</dd
-                  >
+                  <dd class="service-cards__dd-text">
+                    Замена полифонического динамика
+                  </dd>
                 </div>
                 <div class="service-cards__dt-dd-wrapper">
                   <dt class="service-cards__dt-text">Цена</dt>
@@ -617,9 +640,9 @@
               <dl class="service-cards__card">
                 <div class="service-cards__dt-dd-wrapper">
                   <dt class="service-cards__dt-text">Ремонтные услуги</dt>
-                  <dd class="service-cards__dd-text"
-                    >Замена программного обеспечения</dd
-                  >
+                  <dd class="service-cards__dd-text">
+                    Замена программного обеспечения
+                  </dd>
                 </div>
                 <div class="service-cards__dt-dd-wrapper">
                   <dt class="service-cards__dt-text">Цена</dt>
@@ -761,7 +784,7 @@
       </footer>
     </div>
 
-    <aside
+    <section
       class="communication-menu communication-menu--feedback-menu visually-hidden"
       id="feedbackMenu"
     >
@@ -816,8 +839,8 @@
                 >политикой конфиденциальности</a
               >
             </p>
-            <div class="communication-menu__send-button-wrapper"
-              ><button
+            <div class="communication-menu__send-button-wrapper">
+              <button
                 class="btn-oval btn-oval--send communication-menu__btn-oval"
                 type="submit"
               ></button>
@@ -825,9 +848,9 @@
           </form>
         </div>
       </div>
-    </aside>
+    </section>
 
-    <aside
+    <section
       class="communication-menu communication-menu--call-me-menu visually-hidden"
       id="callMenu"
     >
@@ -860,8 +883,8 @@
                 >политикой конфиденциальности</a
               >
             </p>
-            <div class="communication-menu__send-button-wrapper"
-              ><button
+            <div class="communication-menu__send-button-wrapper">
+              <button
                 class="btn-oval btn-oval--send communication-menu__btn-oval"
                 type="submit"
               ></button>
@@ -869,7 +892,7 @@
           </form>
         </div>
       </div>
-    </aside>
+    </section>
     <div class="blur-overlay visually-hidden" id="blurOverlay"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
