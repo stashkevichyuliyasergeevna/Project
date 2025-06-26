@@ -26,19 +26,31 @@
     align-items: center;
     gap: 16px;
   }
-  &__divider:first-of-type {
-    display: none;
-    @media (min-width: 768px) {
-      display: flex;
-    }
-  }
-  &__divider:last-of-type {
-    display: flex;
-    @media (min-width: 768px) {
-      display: none;
-    }
-  }
+  &__divider {
+    position: relative;
+    width: 2px;
+    height: 35px;
 
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("/images/divider.svg");
+    }
+    &--first {
+      display: none;
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+    &--second {
+      display: flex;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
   &__right-wrapper {
     display: flex;
     flex-wrap: nowrap;

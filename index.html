@@ -124,18 +124,25 @@
     </section>
 
     <aside class="navigation-bar">
-      <div class="navigation-bar__left-wrapper">
-        <button
-          class="btn-round btn-round--burger-button"
-          aria-label="Открыть меню"
-          id="openBurgerMenu"
-        ></button>
-        <img class="navigation-bar__divider" alt="" src="/images/divider.svg" />
-        <a class="logo" href="#" aria-label="Начальная страница CPS">
-          <img src="/images/Group.svg"
-        /></a>
-        <img class="navigation-bar__divider" alt="" src="/images/divider.svg" />
-      </div>
+      <ul class="navigation-bar__left-wrapper">
+        <li>
+          <button
+            class="btn-round btn-round--burger-button"
+            aria-label="Открыть меню"
+            id="openBurgerMenu"
+          ></button>
+        </li>
+        <li class="navigation-bar__divider navigation-bar__divider--first"></li>
+        <li>
+          <a class="logo" href="#" aria-label="Начальная страница CPS">
+            <img src="/images/Group.svg"
+          /></a>
+        </li>
+        <li
+          class="navigation-bar__divider navigation-bar__divider--second"
+        ></li>
+      </ul>
+
       <ul class="navigation-bar__right-wrapper">
         <li>
           <button
@@ -157,9 +164,7 @@
             aria-label="Войти в свой кабинет"
           ></button>
         </li>
-        <li aria-hidden="true">
-          <img alt="" src="/images/divider.svg" />
-        </li>
+        <li class="navigation-bar__divider"></li>
         <li>
           <button
             class="btn-round btn-round--repair-button"
